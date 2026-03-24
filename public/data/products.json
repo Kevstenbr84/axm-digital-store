@@ -1,0 +1,12 @@
+[
+  {"id":"1","name":"Agentic Flow","tagline":"The Master Library of High-Autonomy AI Prompts","price":67,"originalPrice":97,"badge":"Bestseller","image":"/products/agentic-flow.png"},
+  {"id":"2","name":"The Intelligent Workspace","tagline":"A Complete Notion AI OS for Productivity","price":79,"badge":"v2.0","image":"/products/intelligent-workspace.jpg"},
+  {"id":"3","name":"ViralCommerce","tagline":"The Ultimate TikTok Shop Scaling Kit","price":39,"originalPrice":69,"badge":"Trending","image":"/products/viralcommerce.jpg"},
+  {"id":"4","name":"GPT Forge","tagline":"25+ Custom GPT Blueprints for Business","price":67,"originalPrice":127,"badge":"New","image":"/products/gpt-forge-neon.jpg"},
+  {"id":"5","name":"Authority Engine","tagline":"365-Day LinkedIn Content Strategy","price":57,"originalPrice":97,"badge":"Popular","image":"/products/authority-engine.jpg"},
+  {"id":"6","name":"Pixel-Perfect SaaS","tagline":"Premium Framer Landing Pages","price":89,"originalPrice":149,"badge":"Premium","image":"/products/pixel-perfect-saas.png"},
+  {"id":"7","name":"Profit Tracker","tagline":"Notion Finance Dashboard Pro","price":47,"badge":"Essential","image":"/products/profit-tracker.png"},
+  {"id":"8","name":"Inbox Revenue","tagline":"Email Automation Starter Pack","price":37,"originalPrice":67,"badge":"Proven","image":"/products/inbox-revenue.jpg"},
+  {"id":"9","name":"SynthIdentity","tagline":"AI Avatar Generator System","price":29,"badge":"Hot","image":"/products/synthidentity.png"},
+  {"id":"10","name":"The Digital Asset Vault","tagline":"Complete Digital Product Resale Bundle","price":97,"originalPrice":197,"badge":"Limited","image":"/products/digital-asset-vault.png"}
+]
