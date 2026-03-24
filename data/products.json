@@ -1,0 +1,119 @@
+[
+  {
+    "id": "1",
+    "name": "Agentic Flow",
+    "tagline": "The Master Library of High-Autonomy AI Prompts",
+    "description": "100+ battle-tested AI prompts for autonomous agents, workflow automation, and intelligent systems. Organized by use case with JSON and Markdown formats.",
+    "price": 67,
+    "originalPrice": 97,
+    "category": "AI Tools",
+    "badge": "Bestseller",
+    "image": "/products/agentic-flow.png",
+    "fileTypes": ["JSON", "Markdown", "PDF"]
+  },
+  {
+    "id": "2",
+    "name": "The Intelligent Workspace",
+    "tagline": "A Complete Notion AI OS for Productivity",
+    "description": "5 integrated Notion templates with AI automation formulas, content calendars, project managers, and setup guides. Lifetime updates included.",
+    "price": 79,
+    "category": "Templates",
+    "badge": "v2.0",
+    "image": "/products/intelligent-workspace.jpg",
+    "fileTypes": ["Notion", "JSON"]
+  },
+  {
+    "id": "3",
+    "name": "ViralCommerce",
+    "tagline": "The Ultimate TikTok Shop Scaling & Creative Kit",
+    "description": "20 viral video scripts, product listing templates, and TikTok Shop optimization guides. Proven formulas for e-commerce success.",
+    "price": 39,
+    "originalPrice": 69,
+    "category": "Templates",
+    "badge": "Trending",
+    "image": "/products/viralcommerce.jpg",
+    "fileTypes": ["PDF", "Video Scripts"]
+  },
+  {
+    "id": "4",
+    "name": "GPT Forge",
+    "tagline": "25+ High-Utility Custom GPT Blueprints for Business",
+    "description": "Ready-to-deploy custom GPT configurations for sales, support, content creation, and automation. Includes prompt engineering guides.",
+    "price": 67,
+    "originalPrice": 127,
+    "category": "AI Tools",
+    "badge": "New",
+    "image": "/products/gpt-forge-neon.jpg",
+    "fileTypes": ["JSON", "Markdown"]
+  },
+  {
+    "id": "5",
+    "name": "Authority Engine",
+    "tagline": "The 365-Day LinkedIn Content Strategy & Matrix",
+    "description": "50 proven post templates, content calendar, engagement scripts, and growth frameworks. Build your personal brand systematically.",
+    "price": 57,
+    "originalPrice": 97,
+    "category": "Templates",
+    "badge": "Popular",
+    "image": "/products/authority-engine.jpg",
+    "fileTypes": ["PDF", "Notion"]
+  },
+  {
+    "id": "6",
+    "name": "Pixel-Perfect SaaS",
+    "tagline": "Premium Framer Landing Pages for High-Converting Sites",
+    "description": "Professional Framer templates with responsive design, animations, and conversion optimization. Perfect for SaaS launches.",
+    "price": 89,
+    "originalPrice": 149,
+    "category": "Templates",
+    "badge": "Premium",
+    "image": "/products/pixel-perfect-saas.png",
+    "fileTypes": ["Framer", "JSON"]
+  },
+  {
+    "id": "7",
+    "name": "Profit Tracker",
+    "tagline": "Notion Finance Dashboard Pro",
+    "description": "Complete financial tracking system for digital creators. Revenue tracking, expense management, profit analytics, and tax preparation.",
+    "price": 47,
+    "category": "Templates",
+    "badge": "Essential",
+    "image": "/products/profit-tracker.png",
+    "fileTypes": ["Notion", "JSON"]
+  },
+  {
+    "id": "8",
+    "name": "Inbox Revenue",
+    "tagline": "The Email Automation Starter Pack",
+    "description": "50+ proven email templates for welcome sequences, sales funnels, and customer retention. Copy-paste ready for any platform.",
+    "price": 37,
+    "originalPrice": 67,
+    "category": "Templates",
+    "badge": "Proven",
+    "image": "/products/inbox-revenue.jpg",
+    "fileTypes": ["PDF", "Markdown"]
+  },
+  {
+    "id": "9",
+    "name": "SynthIdentity",
+    "tagline": "AI Avatar Generator System",
+    "description": "Complete Midjourney prompt library for professional AI-generated headshots and avatars. Business, creative, and casual styles included.",
+    "price": 29,
+    "category": "AI Tools",
+    "badge": "Hot",
+    "image": "/products/synthidentity.png",
+    "fileTypes": ["Prompts", "PDF"]
+  },
+  {
+    "id": "10",
+    "name": "The Digital Asset Vault",
+    "tagline": "Complete Digital Product Resale Bundle",
+    "description": "25 premium PLR products with resell rights. Templates, courses, and tools ready to rebrand and sell as your own.",
+    "price": 97,
+    "originalPrice": 197,
+    "category": "Business",
+    "badge": "Limited",
+    "image": "/products/digital-asset-vault.png",
+    "fileTypes": ["Multiple formats"]
+  }
+]
