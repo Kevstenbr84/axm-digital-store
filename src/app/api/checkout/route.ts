@@ -1,11 +1,28 @@
 import { NextRequest, NextResponse } from 'next/server'
 import Stripe from 'stripe'
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!)
+// Initialize Stripe with secret key from environment
+const getStripe = () => {
+  const key = process.env.STRIPE_SECRET_KEY
+  if (!key) {
+    throw new Error('STRIPE_SECRET_KEY is not set')
+  }
+  return new Stripe(key)
+}
 
 export async function POST(request: NextRequest) {
   try {
+    const stripe = getStripe()
     const { productId, name, price, image } = await request.json()
+
+    // Validate required fields
+    if (!name || !price) {
+      return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })
+    }
+
+    const appUrl = process.env.NEXT_PUBLIC_URL || process.env.VERCEL_URL 
+      ? `https://${process.env.VERCEL_URL}` 
+      : 'http://localhost:3000'
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
@@ -15,7 +32,7 @@ export async function POST(request: NextRequest) {
             currency: 'usd',
             product_data: {
               name: name,
-              images: [image.startsWith('/') ? `${process.env.NEXT_PUBLIC_URL || 'http://localhost:3000'}${image}` : image],
+              images: [image.startsWith('/') ? `${appUrl}${image}` : image],
             },
             unit_amount: Math.round(price * 100), // Convert to cents
           },
@@ -23,16 +40,18 @@ export async function POST(request: NextRequest) {
         },
       ],
       mode: 'payment',
-      success_url: `${process.env.NEXT_PUBLIC_URL || 'http://localhost:3000'}/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${process.env.NEXT_PUBLIC_URL || 'http://localhost:3000'}/`,
+      success_url: `${appUrl}/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${appUrl}/`,
       metadata: {
-        productId: productId,
+        productId: productId || 'unknown',
       },
     })
 
     return NextResponse.json({ url: session.url })
   } catch (error: any) {
-    console.error('Stripe error:', error)
-    return NextResponse.json({ error: error.message }, { status: 500 })
+    console.error('Stripe checkout error:', error)
+    return NextResponse.json({ 
+      error: error.message || 'Failed to create checkout session' 
+    }, { status: 500 })
   }
 }
